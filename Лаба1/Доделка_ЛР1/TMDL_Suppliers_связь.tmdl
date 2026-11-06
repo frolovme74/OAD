@@ -1,0 +1,9 @@
+createOrReplace
+
+	relationship 'rel-products-suppliers'
+		fromColumn: 'Superstore'.'Product ID'
+		toColumn: 'Suppliers'.'Product ID'
+		fromCardinality: many
+		toCardinality: one
+		crossFilteringBehavior: oneDirection
+

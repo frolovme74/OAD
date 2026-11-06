@@ -1,0 +1,32 @@
+createOrReplace
+
+	relationship 'star-calendar'
+		fromColumn: 'Superstore'.'Order Date'
+		toColumn: 'Календарь'.'Date'
+		fromCardinality: many
+		toCardinality: one
+
+	relationship 'star-customer'
+		fromColumn: 'Superstore'.'Customer ID'
+		toColumn: 'Клиент'.'Customer ID'
+		fromCardinality: many
+		toCardinality: one
+
+	relationship 'star-location'
+		fromColumn: 'Superstore'.'Location ID'
+		toColumn: 'Местоположение'.'Location ID'
+		fromCardinality: many
+		toCardinality: one
+
+	relationship 'star-product'
+		fromColumn: 'Superstore'.'Product ID'
+		toColumn: 'Товар'.'Product ID'
+		fromCardinality: many
+		toCardinality: one
+
+	relationship 'star-shipmode'
+		fromColumn: 'Superstore'.'Ship Mode'
+		toColumn: 'Способ доставки'.'Ship Mode'
+		fromCardinality: many
+		toCardinality: one
+
